@@ -140,6 +140,12 @@ label {
     opacity: 0.5;
 }
 
+h3{
+    color: white;
+    margin-left: 20px;
+    padding-bottom: 15px;
+    font-size: 24px;
+}
 
 @media screen and (max-width:230px) {
     #search-add-wrapper {
