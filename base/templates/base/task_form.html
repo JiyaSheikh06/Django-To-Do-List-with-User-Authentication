@@ -1,0 +1,20 @@
+{% extends 'base/main.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static '/styles/base.css' %}">
+{% block content%}
+<div class="header-bar font-effect-emboss">
+    <a href="{% url 'tasks' %}">&#8592; Back </a>
+</div>
+<div class="card-body">
+    <form method='POST' action=''>
+        {%csrf_token%}
+        {{form.as_p}}
+        <input class="button font-effect-emboss" type='submit' value='Submit'>
+    
+    </form>
+</div>  
+
+
+{% comment %} <h1>Task Form</h1>
+<a href="{% url 'tasks' %}">Go Back</a>  {% endcomment %}
+{% endblock content%}
